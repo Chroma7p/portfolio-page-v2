@@ -35,6 +35,7 @@ const Work = () => {
                   width="480px"
                   height="300px"
                   frameBorder="0"
+                  suppressHydrationWarning
                 >
                   これは、
                   <a href="https://office.com/webapps">Office</a>{" "}
