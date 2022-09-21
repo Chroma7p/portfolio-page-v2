@@ -11,8 +11,8 @@ type Props = {
 
 export const Base = ({ title, children }: Props) => {
   return (
-    <div style={base}>
-      <h1>{title}</h1>
+    <div className="my-5 mx-6">
+      <h1 className="rounded-b-md text-3xl">{title}</h1>
       {children}
     </div>
   );

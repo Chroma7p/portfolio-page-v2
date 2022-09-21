@@ -1,13 +1,5 @@
 import React from "react";
 
-const block1 = {
-  margin: "10px 1rem 0px",
-};
-
-const inblock1 = {
-  margin: "5px 1rem",
-};
-
 type Props = {
   title: string;
   children: string | JSX.Element;
@@ -15,9 +7,9 @@ type Props = {
 
 export const Block1 = ({ title, children }: Props) => {
   return (
-    <div style={block1}>
-      <h2>{title}</h2>
-      <div style={inblock1}>{children}</div>
+    <div className="my-1 ml-2">
+      <h2 className="text-2xl">{title}</h2>
+      <div className="mx-3 my-2">{children}</div>
     </div>
   );
 };
