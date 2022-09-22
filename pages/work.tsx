@@ -9,10 +9,6 @@ import suico from "../pics/SUICOVERY.jpg";
 import akarichang from "../pics/Yomiage-Akari-Chang.png";
 import Image from "next/image";
 
-const zoom = {
-  zoom: "0.5",
-};
-
 const Work = () => {
   return (
     <Base title="制作物">
