@@ -2,6 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  images: {
+    domains: [
+      "github-readme-stats.vercel.app",
+      "avatars.githubusercontent.com",
+      "grass-graph.appspot.com",
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

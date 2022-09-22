@@ -4,9 +4,17 @@ import { Block1 } from "../components/block1";
 import { Block2 } from "../components/block2";
 import { Block3 } from "../components/block3";
 import { LinkBtn } from "../components/link-button";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const myLoader = ({ src, width }: { src: string; width: Number }) => {
+    return `https://grass-graph.appspot.com/images/${src}?w=${width}
+    }`;
+  };
+
   const router = useRouter();
+
   return (
     <Base title="Top">
       <>
@@ -15,7 +23,7 @@ const Home = () => {
             <div className="mx-3">
               <div className="text-3xl">くろま</div>
               <p>
-                普段はPythonを使って競技プログラミングコンテストに参加したり、CTFに参加したり、DiscordBot等の個人開発をしています。
+                普段はPythonを使って競技プログラミングコンテストに参加したり、CTFに参加したり、DiscordBot等の個人開発をしています。最近Web系を触り始め、フロント、バックともに勉強中です。
               </p>
             </div>
             <Block2 title="所属">
@@ -27,6 +35,7 @@ const Home = () => {
                 Gaiax XS事業部 インターン
               </>
             </Block2>
+
             <Block2 title="スキル(2022年9月現在)">
               <>
                 <Block3 title="Python">
@@ -49,6 +58,34 @@ const Home = () => {
                   このページはNext.js用いて作成しています。
                 </Block3>
               </>
+            </Block2>
+
+            <Block2 title="GitHub">
+              <div>
+                <div className="flex">
+                  <Image
+                    alt="my icon"
+                    width={200}
+                    height={200}
+                    src="https://avatars.githubusercontent.com/u/60846545?v=4"
+                  />
+                  <Image
+                    alt="github stats"
+                    width={400}
+                    height={200}
+                    src="https://github-readme-stats.vercel.app/api?username=Chroma7p&theme=onedark&show_icons=true&count_private=true"
+                  />
+                </div>
+                <div className="flex">
+                  <Image
+                    alt="github grass"
+                    loader={myLoader}
+                    width={800}
+                    height={175}
+                    src="Chroma7p.png"
+                  />
+                </div>
+              </div>
             </Block2>
           </>
         </Block1>
