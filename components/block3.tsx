@@ -7,9 +7,9 @@ type Props = {
 
 export const Block3 = ({ title, children }: Props) => {
   return (
-    <div className="ml-2 mb-1">
+    <div className="ml-10 mb-1">
       <h4 className="text-lg">{title}</h4>
-      <div className="my-0.2 ml-2">{children}</div>
+      <div className="my-1 ml-5">{children}</div>
     </div>
   );
 };
