@@ -5,8 +5,6 @@ import { Block2 } from "../components/block2";
 import { Block3 } from "../components/block3";
 import { LinkBtn } from "../components/link-button";
 
-const homeurl = process.env.PUBLIC_URL;
-
 const Home = () => {
   const router = useRouter();
   return (
@@ -25,28 +23,30 @@ const Home = () => {
                 東京電機大学 工学部 情報通信工学科2年
                 <br />
                 角川ドワンゴ学園 N Code Labo 講師
+                <br />
+                Gaiax XS事業部 インターン
               </>
             </Block2>
-            <Block2 title="スキル">
+            <Block2 title="スキル(2022年9月現在)">
               <>
                 <Block3 title="Python">
                   <p>
-                    研究・趣味で3年程度
+                    研究や趣味で3年程度使用しています。
                     <br />
                     Numpy、Pandas、OpenCV等の有名なライブラリ、機械学習ライブラリ(TensorFlow、scikit-learn)を扱った経験があります。
+                    また、スクレイピング等のデータ収集の自動化の経験があります。
                   </p>
                 </Block3>
-                <Block3 title="Unity(C#)">講師として1年程度</Block3>
-                <Block3 title="C">基本的な事項を学んだ程度</Block3>
+                <Block3 title="Unity(C#)">
+                  講師として1年程度扱っています。
+                </Block3>
+                <Block3 title="C">基本的な事項を学んだ程度です。</Block3>
                 <Block3 title="C++">
-                  <>
-                    競技プログラミングでの使用経験あり
-                    <br />
-                    基本的な事項を学んだ程度
-                  </>
+                  競技プログラミングでの使用経験がありますが、知識としては基本的な事項を学んだ程度です。
                 </Block3>
                 <Block3 title="HTML/CSS/JavaScript">
-                  現在勉強中 このページはReactを用いて作成しています。
+                  実務・趣味で３ヶ月程度使用しています。
+                  このページはNext.js用いて作成しています。
                 </Block3>
               </>
             </Block2>
