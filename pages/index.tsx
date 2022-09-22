@@ -7,14 +7,6 @@ import { LinkBtn } from "../components/link-button";
 
 const homeurl = process.env.PUBLIC_URL;
 
-const namecss = {
-  margin: "1.5rem",
-  fontSize: "3rem",
-};
-const nmblk = {
-  margin: "1rem 2rem",
-};
-
 const Home = () => {
   const router = useRouter();
   return (
@@ -22,8 +14,8 @@ const Home = () => {
       <>
         <Block1 title="自己紹介">
           <>
-            <div style={nmblk}>
-              <div style={namecss}>くろま</div>
+            <div className="mx-3">
+              <div className="text-3xl">くろま</div>
               <p>
                 普段はPythonを使って競技プログラミングコンテストに参加したり、CTFに参加したり、DiscordBot等の個人開発をしています。
               </p>
@@ -38,11 +30,11 @@ const Home = () => {
             <Block2 title="スキル">
               <>
                 <Block3 title="Python">
-                  <>
+                  <p>
                     研究・趣味で3年程度
                     <br />
                     Numpy、Pandas、OpenCV等の有名なライブラリ、機械学習ライブラリ(TensorFlow、scikit-learn)を扱った経験があります。
-                  </>
+                  </p>
                 </Block3>
                 <Block3 title="Unity(C#)">講師として1年程度</Block3>
                 <Block3 title="C">基本的な事項を学んだ程度</Block3>
