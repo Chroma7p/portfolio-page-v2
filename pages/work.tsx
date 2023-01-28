@@ -57,7 +57,7 @@ const Work = () => {
                 <LinkBtn link="https://github.com/Chroma7p/discovery2021">
                   <>リポジトリ</>
                 </LinkBtn>
-                <Image src={suico} alt="picture" width="400px" />
+                <Image src={suico} alt="picture" width={400} height={400} />
               </>
             </Block2>
             <Block2 title="A.I.POST">
