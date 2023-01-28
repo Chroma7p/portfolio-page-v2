@@ -5,7 +5,6 @@ import { Block2 } from "../components/block2";
 import { Block3 } from "../components/block3";
 import { LinkBtn } from "../components/link-button";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 const Home = () => {
   const myLoader = ({ src, width }: { src: string; width: Number }) => {
@@ -80,7 +79,7 @@ const Home = () => {
                   <Image
                     alt="github grass"
                     loader={myLoader}
-                    width={800}
+                    width={900}
                     height={175}
                     src="Chroma7p.png"
                   />
