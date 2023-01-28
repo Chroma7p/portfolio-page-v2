@@ -53,7 +53,7 @@ const Home = () => {
                       </a>
                     </div>
                     <div className="mx-2 my-4" >
-                      <a href="hhttps://github.com/Chroma7p">
+                      <a href="https://github.com/Chroma7p">
                         <Image
                           alt="GitHub icon"
                           width={40}
